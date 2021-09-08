@@ -1,0 +1,22 @@
+	
+	@media (max-width: 720px){
+
+		.todoDetails span{
+			font-size: 12px;
+		}
+		.todoDisplay{
+			width: 100%;
+		}
+
+		.todoComponents input, button{
+			align-self: flex-start;
+		}
+
+		footer{
+			padding: 0 10%;
+		}
+
+		.todoDetails, .clear{
+			width: 100%;
+		}
+	}

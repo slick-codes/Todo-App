@@ -1,0 +1,163 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: lato;
+}
+
+.container{
+	background-color: #4a6ee0;
+	/*background: linear-gradient(-71deg,#15c39a,#19bea0 6%,#19bea0 7%,#4a6ee0 95%);*/
+	height: 100vh;
+	display: grid;
+	grid-template-rows: repeat(12, 1fr);
+	grid-template-columns: 1fr;
+}
+
+header{
+	color: white;
+	background-color: black;
+	grid-row: 1/2;
+	grid-column: 1;
+}
+
+main{
+	grid-row: 2/ 11;
+	grid-column: 1;
+
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.todoDetails{
+	/*background-color: red;*/
+	width: 70%;
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.todoDetails span{
+	padding: 0px 5px;
+	font-size: 12px;
+}
+
+#totalItems{
+	color: blue;
+	flex: 1;
+}
+
+.todoDisplay{
+	background: rgba(0, 0, 0, 0.2);
+	width: 70%;
+	flex: 5;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	overflow-y: scroll;
+}
+
+.todoComponents{
+	padding: 10px;
+	margin: 0.5rem 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.todoComponents input{
+	cursor: pointer;
+
+}
+
+.text-holder{
+	/*background-color: rgba(255, 255, 255, 0.2);*/
+	padding: 0px 10px;
+	margin: 0px 2rem;
+
+	flex: 15;
+	display: flex;
+	flex-direction: column;
+}
+
+.todoComponents span{
+	color: white;
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 5px 10px;
+	/*border-radius: 20px;*/
+	border-radius: 10px 10px 0px 10px;
+
+	
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	font-size: 13px;
+	word-spacing: 3px;
+}
+
+.todoComponents span p{
+	color: white;
+	padding: 5px 0px 0px 0px;
+	opacity: 0.5;
+	/*align-self: flex-end;*/
+	font-size: 10px;
+}
+
+.todoComponents button{
+	padding: 5px;
+	flex: 1;
+	cursor: pointer;
+	font-size: 11px;
+}
+
+.clear{
+	width: 70%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.clear button{
+	padding: 5px 10px;
+	margin: 10px;
+}
+
+footer{
+	/*background-color: rgba(225, 225, 225, 0.8);*/
+	padding: 0rem 30%;
+	grid-row: 11/ -1;
+	grid-column: 1;
+
+	display: flex;
+	justify-content: center;
+}
+
+.insertTodo{
+	height: 2rem;
+	width: 10rem;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.insertTodo input{
+	flex: 5;
+}
+
+.insertTodo button{
+	/*background-color: #15c39a;*/
+	height: 100%;
+	margin: 0 5px;
+	flex: 1;
+}
+
+button{
+	background-color: #1BA4BF;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
